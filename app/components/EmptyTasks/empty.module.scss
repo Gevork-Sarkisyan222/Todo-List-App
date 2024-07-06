@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  color: #c9d1d3;
+
+  h1 {
+    color: #c9d1d3 !important;
+    font-weight: 700;
+    line-height: 39.01px;
+    font-size: 35px !important;
+    border-bottom: none !important;
+  }
+}

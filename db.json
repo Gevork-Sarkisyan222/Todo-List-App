@@ -1,0 +1,55 @@
+{
+  "lists": [
+    {
+      "id": "1",
+      "title": "Покупки",
+      "color": "green",
+      "tasks": [
+        {
+          "id": "2",
+          "title": "Купить сыр",
+          "isCompleted": false
+        },
+        {
+          "id": "1720076585637",
+          "title": "buy meat",
+          "isCompleted": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Movies",
+      "color": "pink",
+      "tasks": [
+        {
+          "id": "1720016375153",
+          "title": "look rush hour twice",
+          "isCompleted": true
+        },
+        {
+          "id": "1720076630188",
+          "title": "watch legares",
+          "isCompleted": true
+        }
+      ]
+    },
+    {
+      "id": "a521",
+      "title": "React JS",
+      "color": "#64C4ED",
+      "tasks": [
+        {
+          "id": "1720016476713",
+          "title": "Learn Next js renders",
+          "isCompleted": true
+        },
+        {
+          "id": "1720076639105",
+          "title": "React hooks",
+          "isCompleted": true
+        }
+      ]
+    }
+  ]
+}

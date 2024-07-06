@@ -1,0 +1,61 @@
+.todo {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+
+  .removeIcon {
+    display: none;
+    position: absolute;
+    right: 30px;
+  }
+
+  &:hover {
+    .removeIcon {
+      display: block;
+    }
+  }
+
+  .checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e8e8e8;
+    border-radius: 100px;
+    background: white;
+    cursor: pointer;
+
+    svg {
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &:hover {
+      background-color: #f2f2f2;
+
+      svg {
+        opacity: 1;
+      }
+    }
+
+    &.checked {
+      border: 1px solid #4dd599;
+      background-color: #4dd599;
+      cursor: pointer;
+
+      svg {
+        opacity: 1;
+      }
+
+      &:hover {
+        background-color: #4dd599;
+        border: 1px solid #4dd599;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+.wrapper {
+  width: 806px;
+  height: 550px;
+  background: #ffff;
+  border-radius: 5px;
+  display: flex;
+
+  .sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: #f4f6f8;
+    padding: 60px 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .allTasks {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: -10px;
+      margin-bottom: 30px;
+      font-size: 17px;
+      font-weight: 400;
+      padding: 10px;
+      cursor: pointer;
+
+      &.active {
+        background-color: white;
+        border-radius: 5px;
+      }
+    }
+
+    .lists {
+      list-style-type: none;
+      margin-bottom: 50px;
+      margin-left: -10px;
+
+      .list {
+        position: relative;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 17px;
+        margin-bottom: 5px;
+        font-family: 400;
+        cursor: pointer;
+        padding: 10px;
+
+        &.active {
+          background-color: white;
+          border-radius: 5px;
+
+          .removeIcon {
+            opacity: 1;
+          }
+        }
+
+        .removeIcon {
+          opacity: 0;
+          position: absolute;
+          right: 20px;
+        }
+
+        &:hover {
+          background-color: white;
+          border-radius: 5px;
+
+          .removeIcon {
+            opacity: 1;
+          }
+        }
+
+        .circle {
+          width: 12px;
+          height: 12px;
+          border-radius: 100px;
+        }
+      }
+    }
+    .addList {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      color: #767676;
+      cursor: pointer;
+    }
+
+    .createList_popup {
+      position: relative;
+      width: 235px;
+      height: 150px;
+      background-color: #ffffff;
+      padding: 18px;
+      margin-top: 7px;
+      border-radius: 10px;
+
+      .container {
+        margin: 0 auto;
+
+        .closeIcon {
+          position: absolute;
+          top: -5px;
+          right: -7px;
+          cursor: pointer;
+        }
+
+        input {
+          width: 200px;
+          height: 32px;
+          border: 1px solid #efefef;
+          background: #ffff;
+          outline: none;
+          border-radius: 5px;
+          padding: 11px 7px;
+          margin-bottom: 13px;
+
+          &::placeholder {
+            color: #c7c7c7;
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+
+        .colors {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          margin-bottom: 13px;
+
+          .roundColors {
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+            cursor: pointer;
+
+            &.activeColor {
+              border: 2px solid #525252;
+            }
+          }
+        }
+
+        button {
+          width: 200px;
+          height: 37px;
+          color: white;
+          background: #4dd599;
+          border-radius: 4px;
+          border: none;
+          cursor: pointer;
+
+          &:hover {
+            background: #6be0ae;
+          }
+        }
+      }
+    }
+  }
+
+  .fullList {
+    flex: 2;
+    padding: 55px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .listEditIcon {
+      display: none;
+    }
+
+    h1 {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: #64c4ed;
+      font-size: 32px;
+      font-weight: 700;
+      padding-bottom: 20px;
+      cursor: pointer;
+      border-bottom: 1px solid #f2f2f2;
+
+      .listEditIcon {
+        display: none;
+      }
+
+      &:hover {
+        .listEditIcon {
+          display: block;
+        }
+      }
+    }
+
+    .todos {
+      margin-top: 5px;
+      margin-bottom: 40px;
+
+      .addTaskBtn {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 20px;
+        // margin-bottom: 20px;
+        margin-left: 3.2px;
+
+        span {
+          color: #b4b4b4;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .allLists_section {
+      display: flex;
+      flex-direction: column;
+
+      .listContainer {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
